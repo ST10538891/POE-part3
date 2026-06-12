@@ -137,7 +137,7 @@ public class Main {
                 String hash = sc.nextLine();
                 for (int i = 0; i < storedCount; i++){
                     if (messageHashes[i].equals(hash)) {
-                        System.out.println("Message successfully deleted.");
+                        System.out.println("Message is now safely deleted.");
                         
                         for (int j = i; j < storedCount - 1; j++) {
                             storedMessages[j] = storedMessages[j+1];
@@ -149,7 +149,7 @@ public class Main {
                             return;
                     }
                 }
-                System.out.println("Hash not found.");
+                System.out.println("Hash no where to be seen.");
             }
             private static void showReport() {
                 System.out.println("\n=== Stored Messages Report ===");
@@ -161,7 +161,7 @@ public class Main {
             }
             private static void runUnitTests() {
                 System.out.println("\n=== Unit Tests ===");
-                System.out.println("Sebt Messages populated: " + (sentCount == 2 ? "PASS" : " FAIL"));
+                System.out.println("Sent Messages populated: " + (sentCount == 2 ? "PASS" : " FAIL"));
                 System.out.println("Longest message test: PASS");
                 System.out.println("Search & Delete tests ready in menu.");
             }
