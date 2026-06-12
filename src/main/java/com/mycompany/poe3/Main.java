@@ -12,12 +12,12 @@ package com.mycompany.poe3;
 import java.util.Scanner;
 
 public class Main {
-    static String[] sentMessages = new String[100];
-    static String[] disregardedMessages = new String[100];
-    static String[] storedMessages = new String[100];
-    static String[] messageHashes = new String[100];
-    static String[] messageIDs = new String[100];
-    static String[] recipients = new String[100];
+    static String[] sentMessages = new String[10];
+    static String[] disregardedMessages = new String[10];
+    static String[] storedMessages = new String[10];
+    static String[] messageHashes = new String[10];
+    static String[] messageIDs = new String[10];
+    static String[] recipients = new String[10];
     
     static int sentCount = 0, disregardCount = 0, storedCount = 0;
     public static void main(String[] args) {
