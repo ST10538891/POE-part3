@@ -111,7 +111,7 @@ public class Main {
            System.out.println("Longest: " + longest);
         } 
         private static void searchById(Scanner sc) {
-            System.out.println("Enter message ID: ");
+            System.out.println("Enter your message ID: ");
             String id = sc.nextLine();
             for (int i = 0; i < storedCount; i++) {
                 if (messageIDs[i].equals(i)) {
@@ -120,7 +120,7 @@ public class Main {
                       return;      
                 }
             }
-            System.out.println("Not found.");
+            System.out.println("ID can not be found.");
         }
         private static void searchByRecipient(Scanner sc) {
             System.out.println("Enter recipient: ");
@@ -133,7 +133,7 @@ public class Main {
         }
         
             private static void deleteByHash(Scanner sc) {
-                System.out.print("Enter hash: ");
+                System.out.print("Enter your hash: ");
                 String hash = sc.nextLine();
                 for (int i = 0; i < storedCount; i++){
                     if (messageHashes[i].equals(hash)) {
